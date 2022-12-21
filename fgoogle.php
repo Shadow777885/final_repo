@@ -2,8 +2,9 @@
 <html>
 	<head>
         <title>Google</title>
+    </head>
 	<body>
-        <?php
+    <?php
     $server = "localhost";
     $username = "php";
     $password = "1.1.";
@@ -15,9 +16,7 @@
     $sql = "INSERT INTO Stupids (searched, ip) VALUES ('{$search}', {$ip});";
     $result = mysqli_query($conn, $sql);
     mysqli_close($conn);
-    //header('Location: https://downloadmoreram.com/');
+    header('Location: https://downloadmoreram.com/');
     ?>
-    <meta http-equiv="refresh" content="0;url=https://downloadmoreram.com/">
-	</head>
     </body>
 </html>
