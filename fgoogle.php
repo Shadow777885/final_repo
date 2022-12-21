@@ -16,7 +16,7 @@
     $sql = "INSERT INTO Stupids (searched, ip) VALUES ('{$search}', '{$ip}');";
     $result = mysqli_query($conn, $sql);
     mysqli_close($conn);
-    header('Location: https://www.google.com/search?q=''.$search');
+    header('Location: https://www.google.com/search?q='.$search);
     ?>
     </body>
 </html>
