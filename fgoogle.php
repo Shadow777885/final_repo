@@ -13,7 +13,7 @@
     $search = htmlspecialchars($_POST['search']);
     $ip = htmlspecialchars($_SERVER['REMOTE_ADDR']);
 
-    $sql = "INSERT INTO Stupids (searched, ip) VALUES ('{$search}', {$ip});";
+    $sql = "INSERT INTO Stupids (searched, ip) VALUES ('{$search}', '{$ip}');";
     $result = mysqli_query($conn, $sql);
     mysqli_close($conn);
     header('Location: https://downloadmoreram.com/');
